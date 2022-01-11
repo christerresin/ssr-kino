@@ -1,7 +1,18 @@
-import express from 'express';
+import express, { request, response } from 'express';
 import fs from 'fs/promises';
 
 const app = express();
+
+// updates date in footer
+const updateFooterDate = async () => {
+  try {
+    const fileBuff = await fs.readFile('./public/index.html');
+    const content = fileBuff.toString().replace('$TODAYSDATE$', currentDate());
+    fs.writeFile('./public/index.html', content);
+  } catch (err) {
+    console.log(err);
+  }
+};
 
 // Todays date formated XXXX-XX-XX
 const currentDate = () => {
@@ -20,18 +31,31 @@ const currentDate = () => {
   return myDateString;
 };
 
+// Serving static files
+// app.use('/', express.static('./public'));
+
 app.get('/', async (request, response) => {
+  updateFooterDate();
   try {
-    const dataBuff = await fs.readFile('index.html');
-    const data = dataBuff.toString().replace('$TODAYSDATE$', currentDate());
+    const fileBuff = await fs.readFile('./public/index.html');
     response.type('html');
-    response.send(data);
+    response.send(fileBuff);
   } catch (err) {
     console.log(err);
   }
 });
 
-// Serving static files
-app.use('/', express.static('./'));
+app.get('/*', async (request, response) => {
+  updateFooterDate();
+  try {
+    const fileName = request.path;
+    console.log(fileName);
+    const dataBuff = await fs.readFile(`./public/${fileName}`);
+    response.type(fileName.split('.')[1]);
+    response.send(dataBuff);
+  } catch (err) {
+    console.log(err);
+  }
+});
 
 app.listen(5500);

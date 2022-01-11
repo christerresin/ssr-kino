@@ -9,7 +9,7 @@
     "sass": "^1.45.1"
   },
   "scripts": {
-    "watch": "sass --watch src/main.scss main.css",
+    "watch": "sass --watch public/src/main.scss src/main.css",
     "dev": "nodemon index.js"
   },
   "author": "",
