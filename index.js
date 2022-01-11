@@ -3,6 +3,7 @@ import fs from 'fs/promises';
 
 const app = express();
 
+// Todays date formated XXXX-XX-XX
 const currentDate = () => {
   let myDate = new Date();
   let myDateString;
@@ -19,8 +20,6 @@ const currentDate = () => {
   return myDateString;
 };
 
-currentDate();
-
 app.get('/', async (request, response) => {
   try {
     const dataBuff = await fs.readFile('index.html');
@@ -32,6 +31,7 @@ app.get('/', async (request, response) => {
   }
 });
 
+// Serving static files
 app.use('/', express.static('./'));
 
 app.listen(5500);
