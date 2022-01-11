@@ -1,14 +1,20 @@
 {
   "name": "kino",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
   "main": "script.js",
   "dependencies": {
+    "express": "^4.17.2",
     "sass": "^1.45.1"
   },
   "scripts": {
-    "watch": "sass --watch src/main.scss main.css"
+    "watch": "sass --watch src/main.scss main.css",
+    "dev": "nodemon index.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
 }
