@@ -38,7 +38,7 @@ app.get('/*', async (request, response) => {
   try {
     const fileName = request.path;
     console.log(fileName);
-    if (fileName === '/index.html') {
+    if (fileName.includes('index.html')) {
       const fileBuff = await fs.readFile('./public/index.html');
       const content = fileBuff
         .toString()
