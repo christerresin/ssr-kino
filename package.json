@@ -6,11 +6,12 @@
   "main": "script.js",
   "dependencies": {
     "express": "^4.17.2",
+    "express-handlebars": "^6.0.2",
     "sass": "^1.45.1"
   },
   "scripts": {
     "watch": "sass --watch public/src/main.scss src/main.css",
-    "dev": "nodemon index.js"
+    "dev": "nodemon app.js"
   },
   "author": "",
   "license": "ISC",

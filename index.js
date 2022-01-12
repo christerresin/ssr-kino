@@ -1,4 +1,4 @@
-import express, { request, response } from 'express';
+import express from 'express';
 import fs from 'fs/promises';
 
 const app = express();
