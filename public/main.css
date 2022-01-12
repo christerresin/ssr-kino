@@ -57,6 +57,9 @@ img {
 .header a:hover {
   color: #c51010;
 }
+.header a .active {
+  color: #c51010;
+}
 @media screen and (min-width: 960px) {
   .header {
     background-color: #100f0f;

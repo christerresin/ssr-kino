@@ -25,8 +25,27 @@ const currentDate = () => {
 };
 
 app.get('/', (req, res) => {
-  const todaysDate = currentDate();
-  res.render('home', { date: todaysDate });
+  res.render('home', { date: currentDate() });
+});
+
+app.get('/contact', (req, res) => {
+  res.render('contact', { date: currentDate() });
+});
+
+app.get('/movies', (req, res) => {
+  res.render('movies', { date: currentDate() });
+});
+
+app.get('/tickets', (req, res) => {
+  res.render('tickets', { date: currentDate() });
+});
+
+app.get('/about', (req, res) => {
+  res.render('about', { date: currentDate() });
+});
+
+app.get('/events', (req, res) => {
+  res.render('events', { date: currentDate() });
 });
 
 app.use('/', express.static('./public'));
