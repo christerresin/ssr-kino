@@ -16,27 +16,31 @@ app.set('views', './views');
 
 // Routing
 app.get('/', (req, res) => {
-  res.render('home', {});
+  res.render('home');
 });
 
-app.get('/contact', (req, res) => {
+app.get('/kontakt', (req, res) => {
   res.render('contact');
 });
 
-app.get('/movies', (req, res) => {
-  res.render('movies', { date: currentDate() });
+app.get('/filmer', (req, res) => {
+  res.render('movies');
 });
 
-app.get('/tickets', (req, res) => {
+app.get('/biljetter', (req, res) => {
   res.render('tickets');
 });
 
-app.get('/about', (req, res) => {
+app.get('/om', (req, res) => {
   res.render('about');
 });
 
 app.get('/events', (req, res) => {
   res.render('events');
+});
+
+app.get('/film', (req, res) => {
+  res.render('movie');
 });
 
 // Serve files
