@@ -47,12 +47,23 @@ app.get('/events', (req, res) => {
 });
 
 app.get('/film/:name', (req, res) => {
-  console.log(req.params.name);
-  res.render('movie');
+  let movieData;
+  if (!req.params.name.includes('.')) {
+    const movieName = req.params.name;
+    movieData = moviesData.filter(
+      (movie) => movie.movieTitle.toLowerCase() === movieName
+    );
+    res.render('movie', { movie: movieData[0] });
+  }
+  if (movieData == []) {
+    console.log('No movie found');
+    res.status(404).send('Not found!');
+  }
 });
 
 // Serve files
 app.use('/', express.static('./public'));
+app.use('/film', express.static('./public'));
 
 // Server start/listening
 app.listen(5500);

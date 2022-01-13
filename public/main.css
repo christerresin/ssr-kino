@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 li {
@@ -43,11 +43,6 @@ img {
   font-size: 32px;
 }
 
-.footerDate {
-  text-align: center;
-  padding-top: 1.5rem;
-}
-
 .header a {
   color: #fafafa;
   text-decoration: none;
@@ -55,9 +50,6 @@ img {
   font-weight: bold;
 }
 .header a:hover {
-  color: #c51010;
-}
-.header a .active {
   color: #c51010;
 }
 @media screen and (min-width: 960px) {
@@ -96,8 +88,7 @@ img {
   box-shadow: 0 -150px 100px #100f0f inset;
   transition: background-image 1s ease-in-out;
 }
-.hero .heroContainer .heroPicPrev,
-.hero .heroContainer .heroPicNext {
+.hero .heroContainer .heroPicPrev, .hero .heroContainer .heroPicNext {
   position: absolute;
   top: calc(50% - 30px);
   font-size: 30px;
@@ -106,8 +97,7 @@ img {
   font-style: bold;
   padding: 5px 15px;
 }
-.hero .heroContainer .heroPicPrev:hover,
-.hero .heroContainer .heroPicNext:hover {
+.hero .heroContainer .heroPicPrev:hover, .hero .heroContainer .heroPicNext:hover {
   background-color: rgba(110, 108, 108, 0.6);
 }
 .hero .heroContainer .heroPicPrev {
@@ -145,7 +135,7 @@ img {
     color: #fafafa;
     font-weight: 600;
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
   }
 
   .comingSoonImg {
@@ -178,7 +168,7 @@ img {
 }
 
 .ftMovie .ftMovieContainer {
-  background-image: url('src/img/banner/banner-5.jpg');
+  background-image: url("src/img/banner/banner-5.jpg");
   background-position: top;
   background-size: cover;
   height: 25rem;
@@ -206,7 +196,7 @@ img {
   color: #fafafa;
   font-weight: 600;
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .events {
@@ -295,19 +285,27 @@ img {
   background-color: teal;
 }
 
-.pickMovie-header {
+.movie-header {
   background-color: deepskyblue;
 }
 
-.pickMovie-hero {
-  background-color: olive;
+.movie-hero {
+  display: block;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  width: auto;
+  height: 640px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.pickMovie-description {
+.movie-description {
   background-color: darkmagenta;
 }
 
-.pickMovie-footer {
+.movie-footer {
   background-color: darksalmon;
 }
 
