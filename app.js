@@ -1,8 +1,15 @@
 import express from 'express';
 import { engine } from 'express-handlebars';
 import currentDate from './public/src/modules/CurrentDate.js';
+import DataRetriever from './public/src/modules/DataRetriever.js';
+import dataRetriever from './public/src/modules/DataRetriever.js';
 
 const app = express();
+
+// Data
+const dataLoader = new DataRetriever();
+const moviesData = await dataLoader.loadMovies();
+const eventsData = await dataLoader.loadEvents();
 
 // Helpers
 const helpers = {
@@ -39,7 +46,8 @@ app.get('/events', (req, res) => {
   res.render('events');
 });
 
-app.get('/film', (req, res) => {
+app.get('/film/:name', (req, res) => {
+  console.log(req.params.name);
   res.render('movie');
 });
 
