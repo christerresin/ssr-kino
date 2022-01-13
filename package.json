@@ -10,7 +10,7 @@
     "sass": "^1.45.1"
   },
   "scripts": {
-    "watch": "sass --watch public/src/main.scss src/main.css",
+    "watch": "sass --watch public/src/main.scss public/main.css",
     "dev": "nodemon app.js"
   },
   "author": "",

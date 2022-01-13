@@ -1,35 +1,26 @@
 import express from 'express';
 import { engine } from 'express-handlebars';
+import currentDate from './public/src/modules/CurrentDate.js';
 
 const app = express();
 
-app.engine('handlebars', engine());
+// Helpers
+const helpers = {
+  todaysDate: currentDate(),
+};
+
+// View engine setup
+app.engine('handlebars', engine({ helpers: helpers }));
 app.set('view engine', 'handlebars');
 app.set('views', './views');
 
-// Todays date formated XXXX-XX-XX
-const currentDate = () => {
-  let myDate = new Date();
-  let myDateString;
-
-  myDate.setDate(myDate.getDate());
-
-  myDateString =
-    myDate.getFullYear() +
-    '-' +
-    ('0' + (myDate.getMonth() + 1)).slice(-2) +
-    '-' +
-    ('0' + myDate.getDate()).slice(-2);
-
-  return myDateString;
-};
-
+// Routing
 app.get('/', (req, res) => {
-  res.render('home', { date: currentDate() });
+  res.render('home', {});
 });
 
 app.get('/contact', (req, res) => {
-  res.render('contact', { date: currentDate() });
+  res.render('contact');
 });
 
 app.get('/movies', (req, res) => {
@@ -37,17 +28,19 @@ app.get('/movies', (req, res) => {
 });
 
 app.get('/tickets', (req, res) => {
-  res.render('tickets', { date: currentDate() });
+  res.render('tickets');
 });
 
 app.get('/about', (req, res) => {
-  res.render('about', { date: currentDate() });
+  res.render('about');
 });
 
 app.get('/events', (req, res) => {
-  res.render('events', { date: currentDate() });
+  res.render('events');
 });
 
+// Serve files
 app.use('/', express.static('./public'));
 
+// Server start/listening
 app.listen(5500);
