@@ -2,7 +2,7 @@ import express from 'express';
 import { engine } from 'express-handlebars';
 import currentDate from './public/src/modules/CurrentDate.js';
 import DataRetriever from './public/src/modules/DataRetriever.js';
-import dataRetriever from './public/src/modules/DataRetriever.js';
+import renderEvents from './public/src/modules/Events.js';
 
 const app = express();
 
@@ -23,7 +23,7 @@ app.set('views', './views');
 
 // Routing
 app.get('/', (req, res) => {
-  res.render('home');
+  res.render('home', { events: renderEvents(eventsData).slice(-4) });
 });
 
 app.get('/kontakt', (req, res) => {

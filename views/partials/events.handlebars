@@ -7,5 +7,30 @@
       amet, consectetur adipiscing elit, sed do eiusmod tempor.
     </div>
   </div>
-  <div class='eventsContainer'></div>
+  <div class='eventsContainer'>
+    {{#each events}}
+      <div class='eventContainer'>
+        <a href='#' class='eventLink'>
+          <div
+            class='eventImage'
+            style='background-image:
+            url(
+            {{bannerImg}}
+            )'
+          >
+            <div class='eventDate'>
+              <div class='eventDateFirstDiv'>
+                {{eventDay}}
+              </div>
+              <div class='eventDateSecondDiv'>
+                {{eventMonth}}
+              </div>
+            </div>
+          </div>
+          <div class='eventTitle'>{{eventTitle}}</div>
+        </a>
+      </div>
+    {{/each}}
+  </div>
+
 </div>
