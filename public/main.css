@@ -365,6 +365,37 @@ a:visited {
   color: #fafafa;
 }
 
+.movieWriters {
+  padding-top: 0.5rem;
+  background-color: #100f0f;
+  color: #fafafa;
+  font-size: 0.8rem;
+}
+.movieWriters h5 {
+  color: #5d5d5d;
+  font-size: 0.8rem;
+}
+
+.movieActors {
+  padding-top: 0.5rem;
+  background-color: #100f0f;
+  color: #fafafa;
+}
+.movieActors h5 {
+  color: #5d5d5d;
+  font-size: 0.8rem;
+}
+
+.movieReleaseDate {
+  padding-top: 0.5rem;
+  background-color: #100f0f;
+  color: #fafafa;
+}
+.movieReleaseDate h5 {
+  color: #5d5d5d;
+  font-size: 0.8rem;
+}
+
 .screensContainer {
   display: flex;
   flex-direction: row;

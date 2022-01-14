@@ -50,7 +50,9 @@ app.get('/film/:id', (req, res) => {
   let movieData;
   const selectedMovieId = parseInt(req.params.id);
   movieData = moviesData.filter((movie) => movie.movieID === selectedMovieId);
-  res.render('movie', { movie: movieData[0] });
+  res.render('movie', {
+    movie: movieData[0],
+  });
 });
 
 app.get('/film/:name', (req, res) => {
@@ -60,7 +62,9 @@ app.get('/film/:name', (req, res) => {
     movieData = moviesData.filter((movie) => {
       movie.movieTitle.toLowerCase().includes(movieName);
     });
-    res.render('movie', { movie: movieData[0] });
+    res.render('movie', {
+      movie: movieData[0],
+    });
   }
   if (movieData == []) {
     console.log('No movie found');

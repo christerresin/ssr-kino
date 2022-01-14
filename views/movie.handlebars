@@ -17,6 +17,22 @@
   </div>
 </div>
 <div class='movieDescription'>{{movie.description}}</div>
+<div class='movieWriters'>
+  <h5>Regi:</h5>
+  {{#each movie.writers}}
+    <p>{{this}}</p>
+  {{/each}}
+</div>
+<div class='movieActors'>
+  <h5>Skådespelare:</h5>
+  {{#each movie.actors}}
+    <p>{{this}}</p>
+  {{/each}}
+</div>
+<div class='movieReleaseDate'>
+  <h5>Premiär:</h5>
+  <p>{{movie.release}}</p>
+</div>
 <div class='screensContainer'>
   <div
     class='screenImg'
@@ -26,8 +42,6 @@
     class='screenImg'
     style="background-image: url('{{movie.screenImg2}}')"
   ></div>
-  <div
-    class='screenImg'
-    style="background-image: url('{{movie.screenImg3}}')"
-  ></div>
+  <div class='screenImg' style="background-image: url('{{movie.screenImg3}}')">
+  </div>
 </div>
