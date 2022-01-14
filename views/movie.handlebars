@@ -1,9 +1,25 @@
-<div
-  class='movie-hero'
-  style="background-image: url('src/img/banner/banner-4.jpg')"
->
+<div class='movie-hero' style="background-image: url('{{movie.bannerImg}}')">
 </div>
-{{movie.bannerImg}}
-<div class='movie-header'>header</div>
-<div class='movie-description'>description</div>
-<div class='movie-footer'>footer</div>
+<h2 class='movieTitle'>{{movie.movieTitle}}</h2>
+<div class='movieInfo'>
+  {{movie.genre}}
+  |
+  {{movie.duration}}
+  |
+  {{movie.age}}
+</div>
+<div class='movieDescription'>{{movie.description}}</div>
+<div class='screensContainer'>
+  <div
+    class='screenImg'
+    style="background-image: url('{{movie.screenImg1}}')"
+  ></div>
+  <div
+    class='screenImg'
+    style="background-image: url('{{movie.screenImg2}}')"
+  ></div>
+  <div
+    class='screenImg'
+    style="background-image: url('{{movie.screenImg3}}')"
+  ></div>
+</div>

@@ -50,8 +50,8 @@ app.get('/film/:name', (req, res) => {
   let movieData;
   if (!req.params.name.includes('.')) {
     const movieName = req.params.name;
-    movieData = moviesData.filter(
-      (movie) => movie.movieTitle.toLowerCase() === movieName
+    movieData = moviesData.filter((movie) =>
+      movie.movieTitle.toLowerCase().includes(movieName)
     );
     res.render('movie', { movie: movieData[0] });
   }
