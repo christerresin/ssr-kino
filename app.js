@@ -24,6 +24,7 @@ app.set('views', './views');
 
 // Routing
 app.get('/', (req, res) => {
+  console.log(renderEvents(eventsData).slice(-4));
   res.render('home', { events: renderEvents(eventsData).slice(-4) });
 });
 
