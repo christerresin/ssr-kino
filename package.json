@@ -4,7 +4,6 @@
   "type": "module",
   "description": "",
   "main": "app.js",
-  "start": "node app.js",
   "dependencies": {
     "express": "^4.17.2",
     "express-handlebars": "^6.0.2",
@@ -13,7 +12,8 @@
   },
   "scripts": {
     "watch": "sass --watch public/src/main.scss public/main.css",
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
@@ -26,4 +26,3 @@
   },
   "homepage": ""
 }
-
