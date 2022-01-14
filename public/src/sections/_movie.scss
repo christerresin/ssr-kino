@@ -9,19 +9,40 @@
   background-repeat: no-repeat;
   background-position: top;
 }
-
-.movieTitle {
-  padding-top: 1rem;
-
+.movieInfoContainer {
+  display: flex;
+  flex-direction: row;
   background-color: $c-black;
-  color: $c-white;
-}
 
-.movieInfo {
-  padding-top: 0.2rem;
+  .movieCoverImg {
+    margin: 0.5rem 1rem;
+    width: auto;
+    height: 5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 2rem 3rem;
+  }
 
-  background-color: $c-black;
-  color: $c-white;
+  .movieInfoText {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    .movieTitle {
+      padding-top: 1rem;
+
+      background-color: $c-black;
+      color: $c-white;
+    }
+
+    .movieInfo {
+      padding-top: 0.2rem;
+
+      background-color: $c-black;
+      color: $c-white;
+    }
+  }
 }
 
 .movieDescription {

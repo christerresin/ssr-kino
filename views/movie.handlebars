@@ -1,12 +1,20 @@
 <div class='movie-hero' style="background-image: url('{{movie.bannerImg}}')">
 </div>
-<h2 class='movieTitle'>{{movie.movieTitle}}</h2>
-<div class='movieInfo'>
-  {{movie.genre}}
-  |
-  {{movie.duration}}
-  |
-  {{movie.age}}
+<div class='movieInfoContainer'>
+  <div
+    class='movieCoverImg'
+    style="background-image: url('{{movie.coverImg}}')"
+  ></div>
+  <div class='movieInfoText'>
+    <h2 class='movieTitle'>{{movie.movieTitle}}</h2>
+    <div class='movieInfo'>
+      {{movie.genre}}
+      |
+      {{movie.duration}}
+      |
+      {{movie.age}}
+    </div>
+  </div>
 </div>
 <div class='movieDescription'>{{movie.description}}</div>
 <div class='screensContainer'>

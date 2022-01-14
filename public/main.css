@@ -199,7 +199,10 @@ img {
   font-family: "Montserrat", sans-serif;
 }
 
-.movieCard {
+a {
+  text-decoration: none;
+}
+a .movieCard {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -208,10 +211,10 @@ img {
   align-items: flex-start;
   background-color: #100f0f;
 }
-.movieCard .movieInfoContainer {
+a .movieCard .movieInfoContainer {
   margin-left: 1rem;
 }
-.movieCard .movieCoverContainer {
+a .movieCard .movieCoverContainer {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   margin-right: 1rem;
@@ -221,6 +224,19 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   padding: 2rem 3rem;
+}
+
+a:nth-child(2n) {
+  text-decoration: none;
+}
+a:nth-child(2n) .movieCard {
+  background-color: #5d5d5d;
+}
+a:nth-child(2n) .movieTitle {
+  background-color: #5d5d5d;
+}
+a:nth-child(2n) .movieInfo {
+  background-color: #5d5d5d;
 }
 
 .events {
@@ -305,13 +321,31 @@ img {
   background-position: top;
 }
 
-.movieTitle {
+.movieInfoContainer {
+  display: flex;
+  flex-direction: row;
+  background-color: #100f0f;
+}
+.movieInfoContainer .movieCoverImg {
+  margin: 0.5rem 1rem;
+  width: auto;
+  height: 5rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 2rem 3rem;
+}
+.movieInfoContainer .movieInfoText {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.movieInfoContainer .movieInfoText .movieTitle {
   padding-top: 1rem;
   background-color: #100f0f;
   color: #fafafa;
 }
-
-.movieInfo {
+.movieInfoContainer .movieInfoText .movieInfo {
   padding-top: 0.2rem;
   background-color: #100f0f;
   color: #fafafa;
