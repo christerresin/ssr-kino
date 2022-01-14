@@ -31,7 +31,7 @@ app.get('/kontakt', (req, res) => {
 });
 
 app.get('/filmer', (req, res) => {
-  res.render('movies');
+  res.render('movies', { movies: moviesData });
 });
 
 app.get('/biljetter', (req, res) => {
@@ -46,13 +46,20 @@ app.get('/events', (req, res) => {
   res.render('events');
 });
 
+app.get('/film/:id', (req, res) => {
+  let movieData;
+  const selectedMovieId = parseInt(req.params.id);
+  movieData = moviesData.filter((movie) => movie.movieID === selectedMovieId);
+  res.render('movie', { movie: movieData[0] });
+});
+
 app.get('/film/:name', (req, res) => {
   let movieData;
   if (!req.params.name.includes('.')) {
     const movieName = req.params.name;
-    movieData = moviesData.filter((movie) =>
-      movie.movieTitle.toLowerCase().includes(movieName)
-    );
+    movieData = moviesData.filter((movie) => {
+      movie.movieTitle.toLowerCase().includes(movieName);
+    });
     res.render('movie', { movie: movieData[0] });
   }
   if (movieData == []) {

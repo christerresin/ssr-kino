@@ -1,1 +1,21 @@
-<h1>This is the MOVIES page</h1>
+{{#each movies}}
+  <a href='/film/{{movieID}}'>
+    <div class='movieCard'>
+      <div class='movieInfoContainer'>
+        <h3 class='movieTitle'>{{movieTitle}}</h3>
+        <div class='movieInfo'>
+          {{genre}}
+          |
+          {{duration}}
+          |
+          {{age}}
+        </div>
+      </div>
+      <div
+        class='movieCoverContainer'
+        style="background-image: url('{{coverImg}}')"
+      >
+      </div>
+    </div>
+  </a>
+{{/each}}
