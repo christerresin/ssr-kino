@@ -1,5 +1,6 @@
 a {
   text-decoration: none;
+  color: $c-white;
 
   .movieCard {
     display: flex;
@@ -12,7 +13,10 @@ a {
     background-color: $c-black;
 
     .movieInfoContainer {
+      display: flex;
+      flex-direction: column;
       margin-left: 1rem;
+      margin-top: 0.5rem;
     }
 
     .movieCoverContainer {
@@ -43,4 +47,8 @@ a:nth-child(2n) {
   .movieInfo {
     background-color: $c-gray;
   }
+}
+
+a:visited {
+  color: $c-white;
 }

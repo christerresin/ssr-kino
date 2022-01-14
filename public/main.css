@@ -201,6 +201,7 @@ img {
 
 a {
   text-decoration: none;
+  color: #fafafa;
 }
 a .movieCard {
   display: flex;
@@ -212,7 +213,10 @@ a .movieCard {
   background-color: #100f0f;
 }
 a .movieCard .movieInfoContainer {
+  display: flex;
+  flex-direction: column;
   margin-left: 1rem;
+  margin-top: 0.5rem;
 }
 a .movieCard .movieCoverContainer {
   margin-top: 0.5rem;
@@ -237,6 +241,10 @@ a:nth-child(2n) .movieTitle {
 }
 a:nth-child(2n) .movieInfo {
   background-color: #5d5d5d;
+}
+
+a:visited {
+  color: #fafafa;
 }
 
 .events {
