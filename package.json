@@ -4,6 +4,7 @@
   "type": "module",
   "description": "",
   "main": "app.js",
+  "start": "node app.js",
   "dependencies": {
     "express": "^4.17.2",
     "express-handlebars": "^6.0.2",
@@ -18,5 +19,9 @@
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^2.0.15"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
   }
 }

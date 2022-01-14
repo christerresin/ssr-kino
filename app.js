@@ -4,6 +4,7 @@ import currentDate from './public/src/modules/CurrentDate.js';
 import DataRetriever from './public/src/modules/DataRetriever.js';
 import renderEvents from './public/src/modules/Events.js';
 
+const port = process.env.PORT || 3000;
 const app = express();
 
 // Data
@@ -77,4 +78,6 @@ app.use('/', express.static('./public'));
 app.use('/film', express.static('./public'));
 
 // Server start/listening
-app.listen(5500);
+app.listen(port, () => {
+  console.log('Server running at port ' + port);
+});
