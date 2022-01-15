@@ -417,6 +417,35 @@ a:visited {
   padding: 5rem 8rem;
 }
 
+.performancesContainer {
+  background-color: #100f0f;
+  color: #fafafa;
+  width: 100%;
+}
+.performancesContainer .performancesHeaderContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  color: #5d5d5d;
+  font-size: 1.2rem;
+  width: 100%;
+}
+.performancesContainer .performanceCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 3rem;
+  width: 100%;
+}
+.performancesContainer .performanceCard .performanceStart {
+  width: 6rem;
+}
+.performancesContainer .performanceCard .performanceSeats {
+  justify-self: end;
+}
+
 .allMovies-header {
   background-color: darkkhaki;
 }

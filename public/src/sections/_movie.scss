@@ -109,3 +109,39 @@
     padding: 5rem 8rem;
   }
 }
+
+.performancesContainer {
+  background-color: $c-black;
+  color: $c-white;
+  width: 100%;
+
+  .performancesHeaderContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    color: $c-gray;
+    font-size: 1.2rem;
+    width: 100%;
+  }
+
+  .performanceCard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 3rem;
+    width: 100%;
+
+    .performanceStart {
+      width: 6rem;
+    }
+
+    .performanceSaloon {
+    }
+
+    .performanceSeats {
+      justify-self: end;
+    }
+  }
+}

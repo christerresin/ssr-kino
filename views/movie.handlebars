@@ -45,3 +45,32 @@
   <div class='screenImg' style="background-image: url('{{movie.screenImg3}}')">
   </div>
 </div>
+<div class='performancesContainer'>
+  {{#if movie.performances}}
+    <div class='performancesHeaderContainer'>
+      <div class='performanceDateHeader'>Tid och datum:</div>
+      <div class='performanceSaloonHeader'>Salong:</div>
+      <div class='performanceSaloonSeats'>Platser:</div>
+      <div>Köp:</div>
+    </div>
+    {{#each movie.performances}}
+      <div class='performanceCard'>
+        <div class='performanceStart'>
+          <p>{{this.startTime}}</p>
+          <p>{{this.date}}</p>
+        </div>
+        <div class='performanceSaloon'>
+          {{this.saloonName}}
+        </div>
+        <div class='performanceSeats'>
+          {{this.availableSeatsSalon}}
+          /
+          {{this.totalSeatsSaloon}}
+        </div>
+        <div class='performanceBuyTicket'>
+          Köp biljett >
+        </div>
+      </div>
+    {{/each}}
+  {{/if}}
+</div>
