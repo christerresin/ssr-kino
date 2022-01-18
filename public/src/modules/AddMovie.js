@@ -63,6 +63,9 @@ const addMovie = async (movieId, dataArray) => {
       imdbId: imdbId,
       imdbUrl: `https://www.imdb.com/title/${imdbId}/`,
       bannerImg: 'https://picsum.photos/1920/1080',
+      screenImg1: 'https://picsum.photos/300/300',
+      screenImg2: 'https://picsum.photos/300/300',
+      screenImg3: 'https://picsum.photos/300/300',
     };
     dataArray.movies.push(newMovie);
     fs.writeFile(
