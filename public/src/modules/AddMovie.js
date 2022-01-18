@@ -62,6 +62,8 @@ const addMovie = async (movieId, dataArray) => {
       age: movieAgeLimit(body.Rated),
       imdbId: imdbId,
       imdbUrl: `https://www.imdb.com/title/${imdbId}/`,
+      bannerImg:
+        'https://picstatio.com/download/3840x2160/8d818b/keanu-reeves-4k-john-wick-chapter-2-poster.jpg',
     };
     dataArray.movies.push(newMovie);
     fs.writeFile(

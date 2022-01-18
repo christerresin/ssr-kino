@@ -90,7 +90,6 @@ app.post('/film/:id', (req, res) => {
 });
 
 app.post('/add', (req, res) => {
-  console.log(req.query.imdbID);
   addMovie(req.query.imdbID, dataArray);
   res.send('OK');
 });

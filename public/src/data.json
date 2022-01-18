@@ -4,11 +4,7 @@
       "movieID": 1,
       "movieTitle": "Bamse och vulkanön",
       "age": "barntillåten",
-      "genre": [
-        "Barn",
-        "Familj",
-        "Animerat"
-      ],
+      "genre": ["Barn", "Familj", "Animerat"],
       "description": "Just som allt verkar vara lugnt och skönt hemma hos Bamse och hans vänner kommer ett nödanrop från Skalmans gamla forskarkollega, biologen Beanka, som mystiskt verkar ha försvunnit på en forskningsresa. Trots att Lille Skutt darrande försöker förklara varför det alltid är dumt att åka på äventyr man inte riktigt vet hur de skall sluta, ger sig våra vänner ut på ett räddningsuppdrag som tar dem förbi hungriga vargar, själviska skurkar och livsfarliga vulkanutbrott. I hasorna har de dessutom en ny antagonist i Bamses värld - den mer än självgoda och självförhärligande småtjuven Kattja som i Bamse och Vulkanön gör sitt intåg i Bamses värld.",
       "duration": "1h 6min",
       "release": "2021-12-22",
@@ -29,11 +25,7 @@
         "John Doe",
         "Kevin Mitnick"
       ],
-      "writers": [
-        "The Mob",
-        "Eminem",
-        "Tom Hanks"
-      ],
+      "writers": ["The Mob", "Eminem", "Tom Hanks"],
       "originalLanguage": "Svenska",
       "performances": [
         {
@@ -114,11 +106,7 @@
       "movieID": 2,
       "movieTitle": "Spider-Man: No Way Home",
       "age": "11 år",
-      "genre": [
-        "Action",
-        "Äventyr",
-        "Sci-Fi"
-      ],
+      "genre": ["Action", "Äventyr", "Sci-Fi"],
       "description": "För första gången i filmhistorien får vi följa allas vår favorithjälte Spider-Man utan sin mask, och hur han inte längre kan separera sitt normala liv från riskerna med att vara en superhjälte. När han ber Doctor Strange om hjälp blir insatserna ännu farligare, och han tvingas upptäcka vad det verkligen innebär att vara Spider-Man.",
       "duration": "2h 28min",
       "release": "2021-12-15",
@@ -139,11 +127,7 @@
         "John Doe",
         "Kevin Mitnick"
       ],
-      "writers": [
-        "The Mob",
-        "Eminem",
-        "Tom Hanks"
-      ],
+      "writers": ["The Mob", "Eminem", "Tom Hanks"],
       "performances": [
         {
           "saloonNr": 2,
@@ -169,11 +153,7 @@
       "movieID": 3,
       "movieTitle": "No Time to Die",
       "age": "15 år",
-      "genre": [
-        "Action",
-        "Äventyr",
-        "Thriller"
-      ],
+      "genre": ["Action", "Äventyr", "Thriller"],
       "description": "James Bond har lämnat sin tjänst och njuter av ett lugnt liv på Jamaica. Det blir dock kortvarigt när hans gamla vän Felix Leiter från CIA dyker upp och ber om hjälp. Uppdraget att rädda en kidnappad forskare visar sig bli mer förrädiskt än väntat.",
       "duration": "2h 43min",
       "release": "2021-09-30",
@@ -194,11 +174,7 @@
         "John Doe",
         "Kevin Mitnick"
       ],
-      "writers": [
-        "The Mob",
-        "Eminem",
-        "Tom Hanks"
-      ],
+      "writers": ["The Mob", "Eminem", "Tom Hanks"],
       "performances": [
         {
           "saloonNr": 3,
@@ -278,11 +254,7 @@
       "movieID": 4,
       "movieTitle": "Encanto",
       "age": "7 år",
-      "genre": [
-        "Animerat",
-        "Äventyr",
-        "Familj"
-      ],
+      "genre": ["Animerat", "Äventyr", "Familj"],
       "description": "Högt upp i bergen i Colombia finns en förtrollad plats kallad Encanto. Här, i ett magisk hus, bor den extraordinära familjen Madrigal där alla bär på fantastiska förmågor. Förutom Mirabel.",
       "duration": "1h 41min",
       "release": "2021-11-26",
@@ -303,11 +275,7 @@
         "John Doe",
         "Kevin Mitnick"
       ],
-      "writers": [
-        "The Mob",
-        "Eminem",
-        "Tom Hanks"
-      ],
+      "writers": ["The Mob", "Eminem", "Tom Hanks"],
       "performances": [
         {
           "saloonNr": 1,
@@ -387,10 +355,7 @@
       "movieID": 5,
       "movieTitle": "The Matrix Resurrections",
       "age": "11 år",
-      "genre": [
-        "Action",
-        "Sci-FI"
-      ],
+      "genre": ["Action", "Sci-FI"],
       "description": "Den efterlängtade fjärde filmen i MATRIX-universumet, från den banbrytande franchisen som omdefinierade en genre. Filmen återförenar Keanu Reeves och Carrie-Anne Moss som Neo och Trinity, de ikoniska rollerna de gjorde kända i “The Matrix.",
       "duration": "2h 27min",
       "release": "2021-12-22",
@@ -411,11 +376,7 @@
         "John Doe",
         "Kevin Mitnick"
       ],
-      "writers": [
-        "The Mob",
-        "Eminem",
-        "Tom Hanks"
-      ],
+      "writers": ["The Mob", "Eminem", "Tom Hanks"],
       "performances": [
         {
           "saloonNr": 1,
@@ -495,11 +456,7 @@
       "movieID": 6,
       "movieTitle": "Moonfall",
       "age": "TBD",
-      "genre": [
-        "Action",
-        "Sci-Fi",
-        "Äventyr"
-      ],
+      "genre": ["Action", "Sci-Fi", "Äventyr"],
       "description": "En mystisk kraft kastar månen ur sin omloppsbana och skickar den på en kollisionskurs mot jorden. Med bara några veckor innan världen kan förintas är NASA-chefen och före detta astronauten, Jo Fowler, övertygad om att hon har nyckeln som kan rädda världen. Men bara en astronaut och en konspirationsteoretiker tror på henne. Dessa osannolika hjältar har ett omöjligt sista uppdrag i rymden framför sig och lämnar alla de älskar, bara för att få reda på att vår måne inte är vad vi tror att den är.",
       "duration": "TBD",
       "release": "2022-02-04",
@@ -520,21 +477,14 @@
         "John Doe",
         "Kevin Mitnick"
       ],
-      "writers": [
-        "The Mob",
-        "Eminem",
-        "Tom Hanks"
-      ],
+      "writers": ["The Mob", "Eminem", "Tom Hanks"],
       "performances": []
     },
     {
       "movieID": 7,
       "movieTitle": "Uncharted",
       "age": "TBD",
-      "genre": [
-        "Action",
-        "Äventyr"
-      ],
+      "genre": ["Action", "Äventyr"],
       "description": "Den unge och gatusmarte Nathan Drake försöker hitta en gömd skatt tillsammans med sin partner Victor ”Sully” Sullivan. Duon ger sig ut på ett actionfyllt äventyr som utspelar sig över hela världen för att hitta ”den största skatten som aldrig hittats”, samtidigt som de följer ledtrådar för att hitta Nathans saknade bror.",
       "duration": "TBD",
       "release": "2022-02-16",
@@ -561,10 +511,7 @@
       "movieID": 8,
       "movieTitle": "The Batman",
       "age": "TBD",
-      "genre": [
-        "Action",
-        "Drama"
-      ],
+      "genre": ["Action", "Drama"],
       "description": "En seriemördare försöker locka in Gothams brottsbekämpare i ett spel att slå ursinnigt mot orättvisorna där de uppstår. Men i Batmans mörka siluett finns en genomträngande blick som metodiskt förstör leken för den undre världen. I The Batman återvänder vi till den ursprungliga legenden om playboy-miljonären med ett alterego som hämnare. Robert Pattinson, från 'Tenet' och 'Twilight', spelar titelrollen som Bruce Wayne/Batman och Jeffrey Wright ('Hunger Games') spelar kommissarie Gordon, Batmans inofficiella kontakt hos polisen.",
       "duration": "TBD",
       "release": "2022-03-02",
@@ -585,23 +532,14 @@
         "John Doe",
         "Kevin Mitnick"
       ],
-      "writers": [
-        "The Mob",
-        "Eminem",
-        "Tom Hanks"
-      ],
+      "writers": ["The Mob", "Eminem", "Tom Hanks"],
       "performances": []
     },
     {
       "movieID": 9,
       "movieTitle": "Lightyear",
       "age": "TBD",
-      "genre": [
-        "Action",
-        "Animerat",
-        "Familj",
-        "Äventyr"
-      ],
+      "genre": ["Action", "Animerat", "Familj", "Äventyr"],
       "description": "En seriemördare försöker locka in Gothams brottsbekämpare i ett spel att slå ursinnigt mot orättvisorna där de uppstår. Men i Batmans mörka siluett finns en genomträngande blick som metodiskt förstör leken för den undre världen. I The Batman återvänder vi till den ursprungliga legenden om playboy-miljonären med ett alterego som hämnare. Robert Pattinson, från 'Tenet' och 'Twilight', spelar titelrollen som Bruce Wayne/Batman och Jeffrey Wright ('Hunger Games') spelar kommissarie Gordon, Batmans inofficiella kontakt hos polisen.",
       "duration": "TBD",
       "release": "2022-06-17",
@@ -622,32 +560,20 @@
         "John Doe",
         "Kevin Mitnick"
       ],
-      "writers": [
-        "The Mob",
-        "Eminem",
-        "Tom Hanks"
-      ],
+      "writers": ["The Mob", "Eminem", "Tom Hanks"],
       "performances": []
     },
     {
       "movieID": 10,
       "movieTitle": "Doctor Strange",
-      "genre": [
-        "Action",
-        " Adventure",
-        " Fantasy"
-      ],
+      "genre": ["Action", " Adventure", " Fantasy"],
       "description": "While on a journey of physical and spiritual healing, a brilliant neurosurgeon is drawn into the world of the mystic arts.",
       "duration": "1h 55min",
       "release": "04 Nov 2016",
       "coverImg": "https://m.media-amazon.com/images/M/MV5BNjgwNzAzNjk1Nl5BMl5BanBnXkFtZTgwMzQ2NjI1OTE@._V1_SX300.jpg",
       "imdbRating": "7.5",
       "director": "Scott Derrickson",
-      "writers": [
-        "Jon Spaihts",
-        " Scott Derrickson",
-        " C. Robert Cargill"
-      ],
+      "writers": ["Jon Spaihts", " Scott Derrickson", " C. Robert Cargill"],
       "actors": [
         "Benedict Cumberbatch",
         " Chiwetel Ejiofor",
@@ -660,26 +586,16 @@
     {
       "movieID": 11,
       "movieTitle": "Don't Look Up",
-      "genre": [
-        "Comedy",
-        " Drama",
-        " Sci-Fi"
-      ],
+      "genre": ["Comedy", " Drama", " Sci-Fi"],
       "description": "Two low-level astronomers must go on a giant media tour to warn mankind of an approaching comet that will destroy planet Earth.",
       "duration": "2h 18min",
       "release": "24 Dec 2021",
       "coverImg": "https://m.media-amazon.com/images/M/MV5BNjZjNDE1NTYtYTgwZS00M2VmLWEyODktM2FlNjhiYTk3OGU2XkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_SX300.jpg",
       "imdbRating": "7.3",
       "director": "Adam McKay",
-      "writers": [
-        "Adam McKay",
-        " David Sirota"
-      ],
-      "actors": [
-        "Leonardo DiCaprio",
-        " Jennifer Lawrence",
-        " Meryl Streep"
-      ],
+      "bannerImg": "https://picstatio.com/download/3840x2160/8d818b/keanu-reeves-4k-john-wick-chapter-2-poster.jpg",
+      "writers": ["Adam McKay", " David Sirota"],
+      "actors": ["Leonardo DiCaprio", " Jennifer Lawrence", " Meryl Streep"],
       "age": "15 år",
       "imdbId": "tt11286314",
       "imdbUrl": "https://www.imdb.com/title/tt11286314/"
