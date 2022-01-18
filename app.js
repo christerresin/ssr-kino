@@ -3,6 +3,8 @@ import { engine } from 'express-handlebars';
 import currentDate from './public/src/modules/CurrentDate.js';
 import DataRetriever from './public/src/modules/DataRetriever.js';
 import renderEvents from './public/src/modules/Events.js';
+import bookMovie from './public/src/modules/Booking.js';
+import addMovie from './public/src/modules/AddMovie.js';
 
 const port = process.env.PORT || 3000;
 const app = express();
@@ -11,6 +13,7 @@ const app = express();
 const dataLoader = new DataRetriever();
 const moviesData = await dataLoader.loadMovies();
 const eventsData = await dataLoader.loadEvents();
+const dataArray = await dataLoader.loadAll();
 
 // Helpers
 const helpers = {
@@ -56,21 +59,40 @@ app.get('/film/:id', (req, res) => {
   });
 });
 
-app.get('/film/:name', (req, res) => {
-  let movieData;
-  if (!req.params.name.includes('.')) {
-    const movieName = req.params.name;
-    movieData = moviesData.filter((movie) => {
-      movie.movieTitle.toLowerCase().includes(movieName);
-    });
-    res.render('movie', {
-      movie: movieData[0],
-    });
+// app.get('/film/:name', (req, res) => {
+//   let movieData;
+//   if (!req.params.name.includes('.')) {
+//     const movieName = req.params.name;
+//     movieData = moviesData.filter((movie) => {
+//       movie.movieTitle.toLowerCase().includes(movieName);
+//     });
+//     res.render('movie', {
+//       movie: movieData[0],
+//     });
+//   }
+//   if (movieData == []) {
+//     console.log('No movie found');
+//     res.status(404).send('Not found!');
+//   }
+// });
+
+app.post('/film/:id', (req, res) => {
+  console.log(req.body);
+  console.log(req.path);
+  const movieData = moviesData.filter(
+    (movie) => movie.movieID === parseInt(req.params.id)
+  );
+  if (movieData.length > 0) {
+    const movieDate = req.query.date;
+    bookMovie(movieData[0], movieDate);
+    res.render('home', { events: renderEvents(eventsData).slice(-4) });
   }
-  if (movieData == []) {
-    console.log('No movie found');
-    res.status(404).send('Not found!');
-  }
+});
+
+app.post('/add', (req, res) => {
+  console.log(req.query.imdbID);
+  addMovie(req.query.imdbID, dataArray);
+  res.send('OK');
 });
 
 // Serve files
