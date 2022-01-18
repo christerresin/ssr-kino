@@ -90,8 +90,12 @@ app.post('/film/:id', (req, res) => {
 });
 
 app.post('/add', (req, res) => {
-  addMovie(req.query.imdbID, dataArray);
-  res.send('OK');
+  if (req.query.secret === 'youhaveaccess') {
+    addMovie(req.query.imdbID, dataArray);
+    res.send('OK');
+  } else {
+    res.send('ACCESS DENIED!');
+  }
 });
 
 // Serve files
